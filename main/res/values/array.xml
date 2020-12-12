@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="font_sizes">
+        <item >Đà Nẵng</item>
+        <item>Thanh Hóa</item>
+        <item>Cần Thơ</item>
+        <item>Hà Nội</item>
+        <item>Bình Dương</item>
+        <item>Hồ Chí Minh</item>
+    </string-array>
+</resources>

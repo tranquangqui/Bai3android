@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/bg_chinh"
+    android:id="@+id/ll_ls"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+
+        android:id="@+id/toobar_ls"
+        layout="@layout/toolbar_lichsu"/>
+    <LinearLayout
+
+        android:layout_below="@id/toobar_ls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/xehang"/>
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bạn chưa có đơn hàng nào"/>
+        <Button
+            android:id="@+id/ls_dathang"
+            android:text="Đặt hàng ngay"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+           android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vienlayout"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/bg_chinh"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/toolbar_caidat"
+        android:id="@+id/toolbar_caidat">
+    </include>
+    <LinearLayout
+        android:id="@+id/ll_tren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar_caidat">
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/loca"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginRight="95dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Địa điểm đã lưu"
+                android:fontFamily="sans-serif"/>
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ar2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/us"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginRight="95dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Liên kết tài khoản"
+                android:fontFamily="sans-serif"/>
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ar2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/chuong"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginRight="95dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Gửi thông báo"
+                android:fontFamily="sans-serif"/>
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ar2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="v4.5.1"
+        android:layout_below="@+id/ll_tren"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"/>
+</RelativeLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_chinh"
+    tools:context=".chitietsanpham">
+    <include
+        layout="@layout/toolbar_chitietsanpham"
+        android:id="@+id/dathang_chitiet">
+    </include>
+    <LinearLayout
+        android:layout_below="@+id/dathang_chitiet"
+        android:background="@color/white"
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/botron"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/thucan1"/>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/idttchinh"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cafe sữa đá"
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/idgia"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="32.000đ"
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/yeuthich"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/heart"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yêu Thích"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/size"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:background="@color/bg_chinh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Size"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text=""
+            android:background="@color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:id="@+id/rg_radio"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/rd_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:padding="3dp"
+                        android:text="Nhỏ"
+                        android:textSize="15sp" />
+                    <RadioButton
+                        android:id="@+id/rd_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="sans-serif"
+                        android:padding="3dp"
+                        android:text="Vừa"
+                        android:textSize="15sp" />
+                    <RadioButton
+                        android:id="@+id/rd_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="sans-serif"
+                        android:padding="3dp"
+                        android:text="Lớn"
+                        android:textSize="15sp" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="190dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="190dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+ 3.000 đ"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_marginLeft="190dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+ 6.000 đ"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:text=""-->
+<!--                    android:background="@color/black" />-->
+<!--                <LinearLayout-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <RadioButton-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:id="@+id/rd_2"-->
+<!--                        android:text="Vừa"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:padding="3dp"-->
+<!--                        android:fontFamily="sans-serif"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_marginLeft="200dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="+ 3.000 đ"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:fontFamily="sans-serif"-->
+<!--                        android:textColor="@color/black"/>-->
+<!--                </LinearLayout>-->
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:text=""-->
+<!--                    android:background="@color/black" />-->
+<!--                <LinearLayout-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <RadioButton-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:id="@+id/rd_3"-->
+<!--                        android:text="Lớn"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:padding="3dp"-->
+<!--                        android:fontFamily="sans-serif"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_marginLeft="200dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="+ 6.000 đ"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:fontFamily="sans-serif"-->
+<!--                        android:textColor="@color/black"/>-->
+<!--                </LinearLayout>-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text=""
+            android:background="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/gioithieu"
+        android:layout_below="@+id/size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center_vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Giới thiệu món"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text=""
+            android:background="@color/black" />
+        <TextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Cà phê phin kết hợp cùng sữa đặc là đặc sản của người Việt Nam, được xem là món uống tự hào của ngưởi Việt Nam."
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text=""
+            android:background="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/dat"
+        android:gravity="center_vertical"
+        android:layout_below="@id/gioithieu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/tru"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/tru"/>
+        <TextView
+            android:id="@+id/soluonghang"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+        <ImageView
+            android:id="@+id/cong"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/plus"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="126dp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:background="@drawable/botron2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="32.000 đ"
+            android:id="@+id/tongtien"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/bg_chinh"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myaccount">
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/llheader"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/quangqui" />
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:src="@drawable/damcuoi1" />-->
+        <TextView
+            android:fontFamily="sans-serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trần Quang Qui"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/dark"
+            android:textStyle="bold"/>
+        <TextView
+            android:fontFamily="sans-serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khách hàng mới"
+            android:layout_marginLeft="-98dp"
+            android:layout_marginTop="41dp"
+            android:textColor="@color/dark"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="145dp"
+            android:src="@drawable/coin" />
+    </LinearLayout>
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:id="@+id/rl_lv"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/llheader">
+
+        <ListView
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/lv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_lv">
+        <Button
+
+            android:id="@+id/btn_logout"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng Xuất"
+            android:textColor="#FF000000"
+            android:background="@drawable/vienbutton"/>
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

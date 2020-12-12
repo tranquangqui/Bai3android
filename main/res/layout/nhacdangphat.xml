@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_chinh">
+
+    <include
+        layout="@layout/toolbar_nhac"
+        android:id="@+id/tool_nhac">
+    </include>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tool_nhac"
+        android:id="@+id/ll_nhac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+             android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dân Chơi Xóm"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MCK"
+            android:textSize="16sp"
+            android:textColor="@color/cam"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/mck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/bg_chinh1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_nhac">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiếp Theo"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/bg_chinh"
+            android:text=""/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/quynh"/>
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="Có Chàng Trai Viết Lên Cây"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

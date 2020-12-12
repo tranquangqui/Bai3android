@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_chinh">
+    >
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:id="@+id/llheader"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:background="#FFFFFF">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/quangqui" />
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:id="@+id/img_nhac"-->
+<!--                android:layout_width="76dp"-->
+<!--                android:layout_height="76dp"-->
+
+<!--                android:layout_marginTop="45dp"-->
+<!--                android:src="@drawable/logo01"-->
+<!--                app:civ_border_color="#FF000000"-->
+<!--                app:civ_border_width="2dp" />-->
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trần Quang Qui"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/dark"
+                android:textStyle="bold"/>
+            <TextView
+                android:fontFamily="sans-serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tài Khoản Mới"
+                android:layout_marginLeft="-98dp"
+                android:layout_marginTop="41dp"
+                android:textColor="@color/dark"
+                />
+
+            <ImageView
+                android:id="@+id/chuongthongbao"
+                android:layout_width="16dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="155dp"
+                android:src="@drawable/chuong" />
+        </LinearLayout>
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:id="@+id/rl_auto"-->
+<!--            android:layout_below="@+id/llheader"-->
+
+
+<!--            >-->
+<!--            <ViewFlipper-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:id="@+id/viewplipper">-->
+
+<!--            </ViewFlipper>-->
+<!--        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/rl_llheaderchild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/bg_chinh"
+            android:layout_below="@+id/llheader"
+            >
+            <LinearLayout
+                android:id="@+id/llheaderchild"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/lldathang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/order1"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dathang"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lltichdiem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/tichdiem1"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/t_ch_i_m"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llcoupon"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/voucher1"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coupon"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/rewards"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/reward1"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rewards"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_cw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llheaderchild"
+
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rcv_category"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/tennhac"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/rl_cw"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="">
+
+                </TextView>
+
+            </RelativeLayout>
+<!--            <RelativeLayout-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_marginRight="20dp"-->
+<!--                        android:background="#FFFFFF"-->
+<!--                         android:layout_width="match_parent"-->
+<!--                         android:layout_height="wrap_content"-->
+<!--                         android:layout_below="@+id/tennhac"-->
+<!--                         android:id="@+id/rl_nhac"-->
+<!--                         >-->
+
+<!--                         <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                             android:layout_alignParentLeft="true"-->
+<!--                             android:layout_alignParentTop="true"-->
+<!--                             android:layout_centerInParent="true"-->
+<!--                             android:id="@+id/img_nhac"-->
+<!--                             android:layout_width="76dp"-->
+<!--                             android:layout_height="76dp"-->
+
+<!--                             android:layout_marginTop="45dp"-->
+<!--                             android:src="@drawable/logo01"-->
+<!--                             app:civ_border_color="#FF000000"-->
+<!--                             app:civ_border_width="2dp" />-->
+
+<!--                         <RelativeLayout-->
+<!--                             android:layout_alignParentLeft="true"-->
+<!--                             android:id="@+id/ll_nhac"-->
+<!--                             android:layout_marginLeft="85dp"-->
+<!--                             android:layout_width="match_parent"-->
+<!--                             android:layout_height="wrap_content"-->
+
+<!--                             android:layout_centerInParent="true"-->
+<!--                             >-->
+<!--                             <TextView-->
+<!--                                 android:id="@+id/tv_nhac1"-->
+<!--                                 android:layout_width="match_parent"-->
+<!--                                 android:layout_height="wrap_content"-->
+<!--                                 android:text="Đang Cập Nhật - Getup"-->
+<!--                                 android:textSize="17sp"-->
+<!--                                 android:textStyle="bold"-->
+<!--                                 />-->
+<!--                             <TextView-->
+<!--                                 android:layout_width="match_parent"-->
+<!--                                 android:layout_height="wrap_content"-->
+<!--                                 android:layout_marginTop="30dp"-->
+<!--                                 android:text="Now phaying"-->
+<!--                                 android:textSize="17sp" />-->
+<!--                         </RelativeLayout>-->
+<!--            </RelativeLayout>-->
+<!--            <RelativeLayout-->
+<!--                android:background="@color/bg_chinh"-->
+<!--                android:layout_below="@+id/r"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp">-->
+
+<!--            </RelativeLayout>-->
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/rl_nav"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>
+</RelativeLayout>

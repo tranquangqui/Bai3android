@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="15dp"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_uudai"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/bguudai"
+
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_uudai"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cou"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#ED070707"
+            android:fontFamily="sans-serif"
+            android:id="@+id/tv_uudai"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+            android:text="ưu dai 1"
+            android:layout_below="@+id/img_uudai"
+            />
+        <Button
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_uudai"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Chi tiết"
+            android:textAllCaps="false"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:background="@drawable/botron"
+            android:layout_below="@+id/img_uudai"
+            android:textColor="#F6A327"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
