@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         dbManager = new DBManager(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button imageView1 = (Button) findViewById(R.id.btn_login);
+        Button login = (Button) findViewById(R.id.btn_login);
         ImageView imageView = (ImageView) findViewById(R.id.reg_btn);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,19 +32,19 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             }
 
         });
-        imageView1.setOnClickListener(new View.OnClickListener() {
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 edName = (EditText) findViewById(R.id.email);
                 edPass = (EditText) findViewById(R.id.password);
-                Button imageView1 = (Button) findViewById(R.id.btn_login);
+                Button login = (Button) findViewById(R.id.btn_login);
                 String tenDN = edName.getText().toString();
                 String pass = edPass.getText().toString();
 
                 boolean kt = dbManager.KiemTraDangNhap(tenDN, pass);
                 if (kt) {
 //                    Toast.makeText(LoginActivity.this, "Đăng Nhập Thành Công", Toast.LENGTH_SHORT).show();
-                    imageView1.setOnClickListener(new View.OnClickListener() {
+                    login.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
@@ -59,14 +59,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
     }
     public void btnDangNhat(){
-        Button imageView = (Button)findViewById(R.id.btn_login);
+        Button login1 = (Button)findViewById(R.id.btn_login);
         String tenDN = edName.getText().toString();
         String pass = edPass.getText().toString();
 
         boolean kt = dbManager.KiemTraDangNhap(tenDN, pass);
         if(kt == true){
             Toast.makeText(LoginActivity.this, "Đăng Nhập Thành Công", Toast.LENGTH_SHORT).show();
-            imageView.setOnClickListener(new View.OnClickListener() {
+            login1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(LoginActivity.this,MainActivity.class);
