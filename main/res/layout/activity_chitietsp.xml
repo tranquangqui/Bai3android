@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     android:background="@color/bg_chinh"
     tools:context=".chitietsanpham">
+
     <include
-        layout="@layout/toolbar_chitietsanpham"
-        android:id="@+id/dathang_chitiet">
-    </include>
+        android:id="@+id/dathang_chitiet"
+        layout="@layout/toolbar_chitietsanpham"></include>
+
     <LinearLayout
         android:layout_below="@+id/dathang_chitiet"
         android:background="@color/white"

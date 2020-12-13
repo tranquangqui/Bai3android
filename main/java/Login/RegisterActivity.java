@@ -3,6 +3,7 @@ package Login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
@@ -15,7 +16,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText edEmail;
     private EditText edName;
     private EditText edPass;
-    private ImageView btndk;
+    private Button btndk;
     DBManager dbManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,15 +26,8 @@ public class RegisterActivity extends AppCompatActivity {
         edEmail = (EditText)findViewById(R.id.dk_email);
         edName = (EditText)findViewById(R.id.usernameđk);
         edPass = (EditText)findViewById(R.id.dk_password);
-        btndk = (ImageView)findViewById(R.id.btn_login1);
+        btndk = (Button)findViewById(R.id.btn_login1);
         ImageView imageView = (ImageView)findViewById(R.id.log_btn);
-//        imageView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-//                startActivity(intent);
-//            }
-//        });
 
         btndk.setOnClickListener(new View.OnClickListener() {
             @Override
